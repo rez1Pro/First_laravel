@@ -9,5 +9,6 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
+	public $passed_data = []; // array() o likha jabe.....
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
