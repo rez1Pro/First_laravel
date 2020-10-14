@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use App\Models\User;
+namespace App\Models\User;
+
 class UserController extends Controller
 {
 	// Data inserted system in laravel

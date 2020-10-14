@@ -18,10 +18,10 @@ Route::get('/', function () {
 Route::get('/home' , 'App\Http\Controllers\HomeController@index')->name('home');
 
 // User Controller function
-Route::get('/create-user' , 'App\Http\Controllers\UserController@create')->name('create');
-Route::get('/show-user' , 'App\Http\Controllers\UserController@view')->name('show-user');
-Route::get('/specific-user/{id}' , 'App\Http\Controllers\UserController@user')->name('specific-user');
-Route::get('/delete/{id}' , 'App\Http\Controllers\UserController@delete')->name('delete');
+Route::get('/create-user' , 'App\Http\Controllers\UserController@create');
+Route::get('/show-user' , 'App\Http\Controllers\UserController@view');
+Route::get('/specific-user/{id}' , 'App\Http\Controllers\UserController@user');
+Route::get('/delete/{id}' , 'App\Http\Controllers\UserController@delete');
 
 //Crud Controller function route go here.....
 Route::get('/add-user','App\Http\Controllers\CrudController@user_create');
